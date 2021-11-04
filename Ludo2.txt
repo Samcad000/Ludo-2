@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		#main{
+		  background-color:pink;
+		  width:500px;
+		  height:500px;
+	      position:relative;
+		  border: 8px dashed;
+		  
+		}
+		#child{
+		  background-color:green;
+		  width:200px;
+		  height:200px;
+		  position:absolute;
+		  top:0px;
+		  left:0px;
+		}
+		#child1{
+		  background-color:blue;
+		  width:200px;
+		  height:200px;
+		  position:absolute;
+		  top:0px;
+		  left:300px;
+		}
+		#child2{
+		  background-color:yellow;
+		  width:200px;
+		  height:200px;
+		  position:absolute;
+		  top:300px;
+		  left:300px;
+		}
+		#child3{
+		  background-color:red;
+		  width:200px;
+		  height:200px;
+		  position:absolute;
+		  top:300px;
+		  left:0px;
+		  }
+		#child4{
+		  background-color:black;
+		  width:0px;
+		  height:0px;
+		  position:absolute;
+		  top:200px;
+		  left:200px;
+		  border-left: 50px solid green;
+          border-right: 50px solid yellow;
+          border-bottom: 50px solid red;
+          border-top: 50px solid blue;
+          display: inline-block;
+		}
+		#baby{
+		  background-color:white;
+		  width:120px;
+		  height:120px;
+		  position:absolute;
+		  top:35px;
+		  left:35px;
+		  border: 5px dashed;
+		  }
+		#baby1{
+		  background-color:white;
+		  width:120px;
+		  height:120px;
+		  position:absolute;
+		  top:35px;
+		  left:35px;
+		  border: 5px dashed;
+		  }
+		#baby2{
+		  background-color:white;
+		  width:120px;
+		  height:120px;
+		  position:absolute;
+		  top:35px;
+		  left:35px;
+		  border: 5px dashed;
+		  }
+		#baby3{
+		  background-color:white;
+		  width:120px;
+		  height:120px;
+		  position:absolute;
+		  top:35px;
+		  left:35px;
+		  border: 5px dashed;
+		  }
+		.multiply{
+		  background-color:grey;
+		  width:33px;
+		  height:33px;
+		  position:absolute;
+		  left:200px;
+		  border: 1px solid black;
+		  }
+		.increase{
+		  background-color:grey;
+		  width:33px;
+		  height:33px;
+		  position:absolute;
+		  top:200px;
+		  border: 1px solid black;
+		}
+		.roundg1{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:green;
+		left:10px;
+		top:10px;
+	   }
+		.roundg2{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:green;
+		left:70px;
+		top:10px;
+	   }
+	   .roundg3{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:green;
+		left:10px;
+		top:70px;
+	   }
+	   .roundg4{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:green;
+		left:70px;
+		top:70px;
+	   }
+	   .roundb1{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:blue;
+		left:10px;
+		top:10px;
+	   }
+		.roundb2{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:blue;
+		left:70px;
+		top:10px;
+	   }
+	   .roundb3{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:blue;
+		left:10px;
+		top:70px;
+	   }
+	   .roundb4{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:blue;
+		left:70px;
+		top:70px;
+	   }
+	   .roundr1{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:red;
+		left:10px;
+		top:10px;
+	   }
+		.roundr2{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:red;
+		left:70px;
+		top:10px;
+	   }
+	   .roundr3{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:red;
+		left:10px;
+		top:70px;
+	   }
+	   .roundr4{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:red;
+		left:70px;
+		top:70px;
+	   }
+	   .roundy1{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:yellow;
+		left:10px;
+		top:10px;
+	   }
+		.roundy2{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:yellow;
+		left:70px;
+		top:10px;
+	   }
+	   .roundy3{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:yellow;
+		left:10px;
+		top:70px;
+	   }
+	   .roundy4{
+		width:35px;
+		height:35px;
+		position:absolute;
+	    border-radius:50%;
+		background-color:yellow;
+		left:70px;
+		top:70px;
+	   }
+	   .appear{
+		width:35px;
+		height:35px;
+	    border-radius:50%;
+		background-color:green;
+		left:200px;
+		top:299.7px;
+	   }
+	   #game{
+	    width:250px;
+		height:525px;
+	 	background-color:#c0c0c0;
+		position:absolute;
+		top:0px;
+		left:550px;
+	   }
+	   #die1{
+	    width:50px;
+		height:150px;
+		background-color:#555;
+		position:relative;
+		top:100px;
+		left:40px;
+		text-align:center;
+		font-size: 30px;
+		color:white;
+		display:table-cell;
+		vertical-align:middle;
+	   }
+	   #die2{
+	    width:50px;
+		height:150px;
+		background-color:#555;
+		position:relative;
+		top:100px;
+		left:100px;
+		text-align:center;
+		font-size: 30px;
+		color:white;
+		display:table-cell;
+		vertical-align:middle;
+	   }
+	   #btn1{
+	    width:120px;
+		height:50px;
+		background-color:green;
+		position:relative;
+		top:150px;
+		left:70px;
+		font-size:30px;
+		text-align:center;
+		color:white;
+	   }
+		
+	</style>
+
+
+<body onload="go();">
+	<div id="game">
+		<div id="die1" onclick=storeDiesValue("die1")>1</div>
+		<div id="die2" onclick=storeDiesValue("die2")>2</div>
+		<button onclick=generate() id="btn1">PLAY</button>
+	</div>
+	
+
+	<div id="main">
+	
+	  <div id="child">
+		<div id="baby">
+			<div id="a1">
+				<div class="roundg1" id="d1" onclick=move("d1","a1","q1")></div>
+			</div>
+			<div id="a2">
+				<div class="roundg2" id="d2" onclick=move("d2","a2","q1")></div>
+			</div>
+			<div id="a3">
+				<div class="roundg3" id="d3" onclick=move("d3","a3","q1")></div>
+			</div>
+			<div id="a4">
+				<div class="roundg4" id="d4"  onclick=move("d4","a4","q1")></div>
+			</div>
+		</div>
+	   </div>
+	   
+	   
+	   
+	  <div id="child1">
+		<div id="baby1">
+			<div id="a5" onclick=move("a5")>
+				<div class="roundb1" id="d5"></div>
+			</div>
+			<div id="a6" onclick=move("a6")>
+				<div class="roundb2" id="d6"></div>
+			</div>
+			<div id="a7" onclick=move("a7")>
+				<div class="roundb3" id="d7"></div>
+			</div>
+			<div id="a8" onclick=move("a8")>
+				<div class="roundb4" id="d8"></div>
+			</div>
+		 </div>
+	   </div>
+	   
+	   
+			
+	  <div id="child2">
+		<div id="baby2">
+			<div id="a9" onclick=move("a19")>
+				<div class="roundy1" id="d9"></div>
+			</div>
+			<div id="a10" onclick=move("a10")>
+				<div class="roundy2" id="d10"></div>
+			</div>
+			<div id="a11" onclick=move("a11")>
+				<div class="roundy3" id="d11"></div>
+			</div>
+			<div id="a12" onclick=move("a12")>
+				<div class="roundy4" id="d12"></div>
+			</div>
+		</div>
+	  </div>
+				
+				
+				
+	  <div id="child3">
+		<div id="baby3">
+			<div id="a13" onclick=move("a13")>
+				<div class="roundr1" id="d13"></div>
+			</div>
+			<div id="a14" onclick=move("a14")>
+				<div class="roundr2" id="d14"></div>
+			</div>
+			<div id="a15" onclick=move("a15")> 
+				<div class="roundr3" id="d15"></div>
+			</div>
+			<div id="a16" onclick=move("a16")>
+				<div class="roundr4" id="d16"></div>
+			</div>
+		</div>
+      </div>
+			
+			
+			
+	  <div id="child4"></div>
+	  <div class="multiply"></div>
+	  <div id="bk" style="left:200px;"><div>
+	  <div id="buk" style="top:200px;"></div>
+	</div>
+	
+	
+	
+	
+</body>
+
+<script>
+  var x="";
+  var k=""
+  var u=0;
+  var a=6;
+  var y=200;
+  var colo="white";
+  var dieValue=0;
+
+  function go(){
+
+	for(var i=0; i<73; i++){
+         colo="white";
+	     if(i==12) {y=233; u=0;}
+		 if(i==24) {y=266; u=0;}
+		 if(i==6) {u=9;}
+		 if(i==18) {u=9;}
+		 if(i==30) {u=9;}
+		 if(i==36) {y=0; u=6;}
+		 if(i==49) {y=0; u=7;}
+		 if(i==61) {y=0; u=8;}
+		 if(i==43) {y=299;}
+		 if(i==55) {y=299;}
+		 if(i==67) {y=299;}
+		 if(i==10) {colo="red";}
+		 if(i>17 && i<23){colo="red";}
+		 if(i==38) {colo="green";}
+		 if(i>49 && i<55) {colo="green";}
+		 if(i>12 && i<18) {colo="blue";}
+		 if(i==25) {colo="blue";}
+		 if(i>54 && i<60) {colo="yellow";}
+		 if(i==71) {colo="yellow";}
+		 
+         x = x+"<div id=q"+i+" class=multiply style='background-color:"+colo+"; top:"+(u*33.3)+"px; left:"+y+"px;'></div>";
+		 
+		 if(i<36) {u=u+1;}
+		 if(i>36) {y=y+33.2;}
+		 
+	}
+	
+	document.getElementById("bk").innerHTML=x; 	
+ }
+ 
+ 
+ function play(){
+    document.getElementById("a1").innerHTML="";
+	document.getElementById("q6").innerHTML="<div class=appear></div>";
+ }
+ 
+ function generate(){
+	var c = Math.floor((Math.random() * 6) + 1);
+	var d = Math.floor((Math.random() * 6) + 1);
+	document.getElementById("die1").innerHTML=c;
+	document.getElementById("die2").innerHTML=d;
+ }
+ 
+  function move(object,source,destination){
+  
+	//document.getElementById(destination).innerHTML=document.getElementById(source).innerHTML;
+	document.getElementById("q"+dieValue).innerHTML="<div id="+object+" class=appear></div>";
+	document.getElementById(source).innerHTML="";
+ }
+
+function storeDiesValue(id){
+
+	dieValue=document.getElementById(id).innerHTML;
+	
+}
+ 
+ </script>
